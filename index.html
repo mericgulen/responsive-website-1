@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Responsive website" />
+    <meta name="keywords" content="html, css, js, responsive" />
+    <meta name="author" content="Meric Gulen" />
+    <title>Responsive Website</title>
+    <!--* Bootstrap cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <!--* Header  -->
+    <header class="header">
+      <div class="container">
+        <div class="navbar f-between">
+          <a href="#home"
+            ><img class="navbar__logo" src="./images/logo.png" alt="Logo image"
+          /></a>
+
+          <nav class="nav" id="nav">
+            <i class="bi bi-x" onclick="hideMenu()"></i>
+
+            <ul class="nav__list">
+              <li class="list__item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="list__item">
+                <a href="#courses" class="nav-link">Courses</a>
+              </li>
+              <li class="list__item">
+                <a href="#certificate" class="nav-link">Certificates</a>
+              </li>
+              <li class="list__item">
+                <a href="#skills" class="nav-link">Skills</a>
+              </li>
+
+              <li class="list__item">
+                <a href="#review" class="nav-link">Reviews</a>
+              </li>
+
+              <li class="list__item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <i class="bi bi-list" onclick="showMenu()"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__row f-between">
+            <div class="hero__row-col">
+              <h1>
+                Do you need a Website
+                <span class="col-span">What are you waiting for more</span>
+              </h1>
+              <p>For effective designs</p>
+              <a class="btn" href="#contact">Contact Us</a>
+            </div>
+            <div class="hero__row-col hidden">
+              <img src="./images/home-imgr.png" alt="person image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses" id="courses">
+        <div class="container">
+          <h2 class="secondary-heading">Courses</h2>
+          <div class="grid grid-3-cols">
+            <div class="courses__row-col">
+              <div class="icon">
+                <i class="bi bi-filetype-html"></i>
+              </div>
+              <h3>Html&Css</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tenetur magni pariatur sit inventore eaque nemo.
+              </p>
+            </div>
+            <div class="courses__row-col">
+              <div class="icon">
+                <i class="bi bi-filetype-js"></i>
+              </div>
+              <h3>Javascript</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tenetur magni pariatur sit inventore eaque nemo.
+              </p>
+            </div>
+
+            <div class="courses__row-col">
+              <div class="icon">
+                <i class="bi bi-filetype-py"></i>
+              </div>
+              <h3>Python</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tenetur magni pariatur sit inventore eaque nemo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificates" id="certificate">
+        <div class="container">
+          <h2 class="secondary-heading">Certificates</h2>
+          <div class="certificates-row grid grid-4-cols">
+            <div class="certificates-col f-between">
+              <img src="./images/js.png" alt="" />
+              <div class="certificate-content f-between">
+                <span>Udemy</span>
+                <div class="ratings f-between">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <p class="certificates-text">Javascript</p>
+            </div>
+            <div class="certificates-col f-between">
+              <img src="./images/boot.png" alt="" />
+              <div class="certificate-content f-between">
+                <span>Udemy</span>
+                <div class="ratings f-between">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <p class="certificates-text">Bootstrap</p>
+            </div>
+
+            <div class="certificates-col f-between">
+              <img src="./images/python.png" alt="" />
+              <div class="certificate-content f-between">
+                <span>Udemy</span>
+                <div class="ratings f-between">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <p class="certificates-text">Python</p>
+            </div>
+
+            <div class="certificates-col f-between">
+              <img src="./images/react.png" alt="" />
+              <div class="certificate-content f-between">
+                <span>Udemy</span>
+                <div class="ratings f-between">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <p class="certificates-text">React</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="container">
+          <h2 class="secondary-heading">Skills</h2>
+          <div class="grid grid-2-cols">
+            <div class="skills-img">
+              <img src="./images/about-img.jpg" alt="" />
+            </div>
+            <div class="skills-item grid grid-2-cols-row">
+              <div class="skill-item f-between">
+                <p class="skill-number">20<i class="bi bi-plus"></i></p>
+                <p class="skill-text">Html</p>
+              </div>
+              <div class="skill-item f-between">
+                <p class="skill-number">40<i class="bi bi-plus"></i></p>
+                <p class="skill-text">Bootstrap</p>
+              </div>
+              <div class="skill-item f-between">
+                <p class="skill-number">30<i class="bi bi-plus"></i></p>
+                <p class="skill-text">Javascript</p>
+              </div>
+              <div class="skill-item f-between">
+                <p class="skill-number">50<i class="bi bi-plus"></i></p>
+                <p class="skill-text">React</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review" id="review">
+        <div class="container">
+          <h2 class="secondary-heading">Reviews</h2>
+          <div class="reviews grid grid-2-col">
+            <div class="review">
+              <div class="review-box f-between">
+                <img
+                  class="review-img"
+                  src="./images/person-1.png"
+                  alt="person image"
+                />
+                <div class="review-content">
+                  <p class="review-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Pariatur necessitatibus ea sed maxime omnis esse magnam,
+                    reprehenderit incidunt laborum repellendus.
+                  </p>
+                  <p class="review-person">Lauro Doe / CEO</p>
+                </div>
+              </div>
+              <div class="review-box f-between">
+                <img
+                  class="review-img"
+                  src="./images/person-2.png"
+                  alt="person image"
+                />
+                <div class="review-content">
+                  <p class="review-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Pariatur necessitatibus ea sed maxime omnis esse magnam,
+                    reprehenderit incidunt laborum repellendus.
+                  </p>
+                  <p class="review-person">Lauro Doe / CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="review">
+              <div class="review-box f-between">
+                <img
+                  class="review-img"
+                  src="./images/person-3.png"
+                  alt="person image"
+                />
+                <div class="review-content">
+                  <p class="review-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Pariatur necessitatibus ea sed maxime omnis esse magnam,
+                    reprehenderit incidunt laborum repellendus.
+                  </p>
+                  <p class="review-person">Lauro Doe / CEO</p>
+                </div>
+              </div>
+              <div class="review-box f-between">
+                <img
+                  class="review-img"
+                  src="./images/person-1.png"
+                  alt="person image"
+                />
+                <div class="review-content">
+                  <p class="review-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Pariatur necessitatibus ea sed maxime omnis esse magnam,
+                    reprehenderit incidunt laborum repellendus.
+                  </p>
+                  <p class="review-person">Lauro Doe / CEO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="secondary-heading">Contact</h2>
+          <div class="grid grid-2-col">
+            <div class="contact-img">
+              <img src="./images/contactt.png" alt="contact image" />
+            </div>
+
+            <form class="contact-form f-between">
+              <div class="form-input f-between">
+                <i class="bi bi-person-fill"></i>
+                <input type="text" placeholder="Fullname" />
+              </div>
+              <div class="form-input f-between">
+                <i class="bi bi-envelope-open-fill"></i>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="form-textarea">
+                <textarea placeholder="Message" rows="8"></textarea>
+              </div>
+              <a class="btn" href="#">Submit</a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-items grid grid-2-cols">
+          <div class="footer-social">
+            <a href="#home"
+              ><img
+                class="navbar__logo"
+                src="./images/logo.png"
+                alt="Logo image"
+            /></a>
+            <div class="social-media f-between">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-twitter"></i>
+            </div>
+          </div>
+          <nav class="footer-links">
+            <ul class="footer-list f-between">
+              <li class="footer-list-item">
+                <a href="#" class="footer-link">Home</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#courses" class="footer-link">Courses</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#certificate" class="footer-link">Certificates</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#review" class="footer-link">Reviews</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#contact" class="footer-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="copyright">&copy; <span class="year">2018</span> mgdev</p>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
